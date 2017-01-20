@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>CSS/HTML Workshop with Drivy</title>
-  </head>
-  <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="container text-center">
+    <h1 >
+        I want some WOW
+    </h1>
+    <div class="col-md-12">
+        <div class="div col-md-6">
+            <h2>The car</h2>
+            <div class="col-md-12 form-group">
+                <label>Car model
+                <input class="model" type="text" placeholder="Car model"/></label>
+            </div>
+            <div class="col-md-12 form-group">
+                <label>Price by day
+                <input class="price-by-day" type="number" placeholder="Price by day"/>
+                </label>
+            </div>
+            <div class="col-md-12 form-group">
+                <label>Price by Km
+                <input class="price-by-km" type="number" placeholder="Price by km"/>
+                </label>
+            </div>
+        </div>
+        <div class="div col-md-6">
+            <h2>The rental</h2>
+            <div class="col-md-12 form-group">
+                <input class="begin" type="date" placeholder="Rental begin date"/>
+            </div>
+            <div class="col-md-12 form-group">
+                <input class="end" type="date" placeholder="Rental end date"/>
+            </div>  
+            <div class="col-md-12 form-group">
+                <input class="distance" type="number" placeholder="Distance in km"/>
+            </div>
+            <div class="col-md-12 form-group">
+                <input class="option" type="checkbox" placeholder="Deductible option"/>
+            </div>
+        </div>
     </div>
     <button id="compute">Compute</button>
     <div id="actors"></div>
@@ -25,9 +54,19 @@
           <span>{{amount}}</span>
         </div>
       {{/actors}}
+
+
+
+
+
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
-  </body>
+</div>
+</body>
+<footer class="footer">
+
+</footer>
 </html>
