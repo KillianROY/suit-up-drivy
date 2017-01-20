@@ -1,2 +1,60 @@
+.btn-drivy {
+    color: white;
+    text-transform: uppercase;
+    background-color: #304d5f;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px #85B526;
+    margin-bottom: 25px;
+}
 
+.btn-drivy:hover {
+    color: white;
+    background-color: #85B526;
+    box-shadow: 0 3px #304d5f;
 
+}
+
+.aboveBlueFooter {
+    height: 15px;
+    background-color: #304d5f;
+    margin-bottom: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 78px;
+    left: 0;
+}
+
+.aboveGreenFooter {
+    height: 10px;
+    background-color: #85B526;
+    width: 100%;
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+}
+
+.footer {
+    height: 78px;
+    padding: 25px;
+    color: white;
+    background-image: linear-gradient(#304d5f, #10202d);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h2{
+    color:#304d5f;
+}
+
+h1{
+    color: #85B526;
+}
+
+.navbar-drivy {
+    background-color: #304d5f;
+    border-color: #10202d;
+}

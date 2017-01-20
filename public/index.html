@@ -6,16 +6,11 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class=" navbar-drivy">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="">DRIVY</a>
+            <a class="navbar-brand" style="color:#85B526">DRIVY</a>
         </div>
-
-        <ul class="nav navbar-nav navbar-right">
-            <li><a>About us</a></li>
-        </ul>
     </div>
 </nav>
 <div class="container text-center">
@@ -24,9 +19,8 @@
     </h1>
 
     <div class="col-md-12">
-        <div class="div col-md-6">
+        <div id="car" class="div col-md-6">
             <h2>The car</h2>
-
             <div class="col-md-12 form-group">
                 <label class="col-md-12">Car model
                     <input class="model col-md-12 form-control" type="text" placeholder="Car model"/></label>
@@ -42,38 +36,47 @@
                 </label>
             </div>
         </div>
-        <div class="div col-md-6">
+        <div id="rental" class="div col-md-6">
             <h2>The rental</h2>
 
             <div class="col-md-12 form-group">
                 <label class="col-md-12">Rental begin date
-                    <input class="begin col-md-12 form-control" type="date" placeholder="Rental begin date"/>
+                    <input class="begin col-md-12 form-control" type="date" placeholder="Rental begin date" required/>
                 </label>
             </div>
             <div class="col-md-12 form-group">
                 <label class="col-md-12">Rental end date
-                    <input class="end col-md-12 form-control" type="date" placeholder="Rental end date"/>
+                    <input class="end col-md-12 form-control" type="date" placeholder="Rental end date" required/>
                 </label>
             </div>
             <div class="col-md-12 form-group">
                 <label class="col-md-12">Distance in km
-                    <input class="distance col-md-12 form-control" type="number" placeholder="Distance in km"/>
+                    <input class="distance col-md-12 form-control" type="number" placeholder="Distance in km" required/>
                 </label>
             </div>
             <div class="col-md-12 form-group">
                 <label>Deductible option
-                    <input class="option col-md-12 form-control" type="checkbox" placeholder="Deductible option"/>
+                    <input class="option col-md-12 " type="checkbox" placeholder="Deductible option"/>
                 </label>
             </div>
         </div>
     </div>
-    <button class="btn btn-lg">Compute</button>
+    <button id="compute" class="btn btn-drivy">Compute</button>
     <div id="actors"></div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+
+        <div class="actor"><h5>
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span></h5>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
-</div>
-</body>
-<footer class="footer">
 
-</footer>
+</body>
+
 </html>
