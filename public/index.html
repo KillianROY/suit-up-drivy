@@ -6,62 +6,69 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">DRIVY</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a>About us</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container text-center">
-    <h1 >
+    <h1>
         I want some WOW
     </h1>
+
     <div class="col-md-12">
         <div class="div col-md-6">
             <h2>The car</h2>
+
             <div class="col-md-12 form-group">
-                <label>Car model
-                <input class="model" type="text" placeholder="Car model"/></label>
+                <label class="col-md-12">Car model
+                    <input class="model col-md-12 form-control" type="text" placeholder="Car model"/></label>
             </div>
             <div class="col-md-12 form-group">
-                <label>Price by day
-                <input class="price-by-day" type="number" placeholder="Price by day"/>
+                <label class="col-md-12">Price by day
+                    <input class="price-by-day col-md-12 form-control" type="number" placeholder="Price by day"/>
                 </label>
             </div>
             <div class="col-md-12 form-group">
-                <label>Price by Km
-                <input class="price-by-km" type="number" placeholder="Price by km"/>
+                <label class="col-md-12">Price by Km
+                    <input class="price-by-km col-md-12 form-control" type="number" placeholder="Price by km"/>
                 </label>
             </div>
         </div>
         <div class="div col-md-6">
             <h2>The rental</h2>
+
             <div class="col-md-12 form-group">
-                <input class="begin" type="date" placeholder="Rental begin date"/>
+                <label class="col-md-12">Rental begin date
+                    <input class="begin col-md-12 form-control" type="date" placeholder="Rental begin date"/>
+                </label>
             </div>
             <div class="col-md-12 form-group">
-                <input class="end" type="date" placeholder="Rental end date"/>
-            </div>  
-            <div class="col-md-12 form-group">
-                <input class="distance" type="number" placeholder="Distance in km"/>
+                <label class="col-md-12">Rental end date
+                    <input class="end col-md-12 form-control" type="date" placeholder="Rental end date"/>
+                </label>
             </div>
             <div class="col-md-12 form-group">
-                <input class="option" type="checkbox" placeholder="Deductible option"/>
+                <label class="col-md-12">Distance in km
+                    <input class="distance col-md-12 form-control" type="number" placeholder="Distance in km"/>
+                </label>
+            </div>
+            <div class="col-md-12 form-group">
+                <label>Deductible option
+                    <input class="option col-md-12 form-control" type="checkbox" placeholder="Deductible option"/>
+                </label>
             </div>
         </div>
     </div>
-    <button id="compute">Compute</button>
+    <button class="btn btn-lg">Compute</button>
     <div id="actors"></div>
-    <script id="template" type="x-tmpl-mustache">
-      {{#actors}}
-        <div class="actor">
-          <span>{{who}}</span>
-          <span>{{type}}</span>
-          <span>{{amount}}</span>
-        </div>
-      {{/actors}}
-
-
-
-
-
-
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
 </div>
